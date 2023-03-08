@@ -1,9 +1,28 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './ContactUs.css';
 import emailjs from '@emailjs/browser'
 
 
 export const ContactUs = () => {
+
+    const [inputText,setInputText] = useState('');
+    const [savedData,setSavedData] = useState(false);
+
+    const handleInputChange = (event) => {
+        const text = event.target.value
+        setInputText(text);
+        console.log(inputText);
+
+        if (text === '') {
+            setSavedData(false)
+        }
+    }
+
+    const saveData = () => {
+        localStorage.setItem('correo', inputText);
+        alert('has guardado tu correo');
+        setSavedData(true);
+    }
 
     const refForm = useRef();
 

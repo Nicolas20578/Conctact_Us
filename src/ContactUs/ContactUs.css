@@ -5,18 +5,18 @@ form {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    border: double #0ae4eb 5px;
+    border: double #ebd10a 5px;
   }
   
   .header-contact {
     width: 100%;
     height: 6rem;
-    background-color: #0ae4eb;
+    background-color: #5932bd;
   }
   
   .header-contact > h2,
   .header-contact > p {
-    color: #021941;
+    color: #ebd10a;
     text-align: left;
     padding: 0.5rem;
     font-size: 2rem;
@@ -34,13 +34,13 @@ form {
     height: 4rem;
     display: flex;
     flex-direction: column;
-    color: #0ae4eb;
+    color: #ebd10a;
     margin: 1rem;
   }
   
   .symbol-required::after {
     content: '*';
-    color: #008cff;
+    color: #5932bd;
   }
   
   .field-message {
@@ -49,11 +49,11 @@ form {
   
   .btn-send {
     width: 12rem;
-    background-color: #0ae4eb;
+    background-color: #5932bd;
   }
   
   .btn-send:hover,
   .btn-send:focus {
-    background-color: #3287f6;
-    color: #ffffff;
+    background-color: #ebd10a;
+    color: #000000;
   }
